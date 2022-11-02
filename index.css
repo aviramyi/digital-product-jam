@@ -11,6 +11,11 @@ body {
   margin: 0 auto;
 }
 
+#companyLogo img {
+  width: 20%;
+  height: auto;
+}
+
 #cat {
   padding: 1rem 0 1rem 0;
 }
