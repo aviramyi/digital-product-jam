@@ -13,48 +13,63 @@
       <div class="intro">
         <div id="introTitle">
           <h1>Hi! Welcome to my intro page</h1>
+          <button type="button" class="changeStyleButton">Randomize colors!</button>
+          <button type="button" class="resetColorButton">Reset colors</button>
+          <button type="button" class="collapseAllButton">Collapse all</button>
+          <button type="button" class="expandAllButton">Expand all</button>
         </div>
-        <p>
-          I'm a software engineer who likes to play music instruments, programming, and running.
-        </p>
+        <div id="introContent" class="content">
+          <p>
+            I'm a software engineer who likes to play music instruments, programming, and running.
+          </p>
+        </div>
       </div>
-      <div id="university">
-        <div id="uniTitle">
+      <div class="university">
+        <div id="uniTitle" class="collapsible">
           <h2>University</h2>
         </div>
-        <a>
-          I started my computer science BSc in HUJI on Oct 19', and I am about to finish it this semester.</br> I
-          enjoyed most
-          of it. Some of my favourite courses are: <ul>
+        <div id="universityContent" class="content">
+          <p>
+            I started my computer science BSc in HUJI on Oct 19', and I am about to finish it this semester.</br> I
+            enjoyed most
+            of it. Some of my favourite courses are:
+          <ul>
             <li>Object Oriented Programming</li>
             <li>Computational models, computability and complexity</li>
             <li>Human-computer interaction</li>
           </ul>
-          Some of them are <em>more theoretical</em> and some are <em>more practical</em> and requires
-          self-learning.
-        </a>
+          <p>
+            Some of them are <em>more theoretical</em> and some are <em>more practical</em> and requires
+            self-learning.
+          </p>
+          </p>
+        </div>
       </div>
-      <div id="work">
-        <div id="workTitle">
+      <div class="work">
+        <div id="workTitle" class="collapsible">
           <h2>Work</h2>
         </div>
-        <p>
-          I work at Microsoft.
-        </p>
-        <div id="companyLogo">
-          <img src="microsoft.gif" alt="Microsoft logo" title="Microsoft company logo" />
+        <div id="workContent" class="content">
+          <p>
+            I work at Microsoft.
+          </p>
+          <div id="companyLogo" class="image-cropper">
+            <img src="microsoft.gif" alt="Microsoft logo" title="Microsoft company logo" />
+          </div>
+          <p>
+            I am part of <a
+              href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction">Microsoft
+              Defender for Cloud</a> team,</br> who works on <strong>security applications</strong> for cloud
+            services, in and outside of Azure (Microsoft's cloud)
+          </p>
         </div>
-        <p>
-          I am part of <a
-            href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction">Microsoft
-            Defender for Cloud</a> team, which works on <strong>security applications</strong> for cloud
-          services, in and outside of Azure (Microsoft's cloud)
-        </p>
       </div>
-      <div id="play">
-        <div id="playTitle">
-          <h2>Play</h2>
-        </div>
+    </div>
+    <div id="play">
+      <div id="playTitle" class="collapsible">
+        <h2>Play</h2>
+      </div>
+      <div id="playContent" class="content">
         <p>
           I play guitar and other instruments. I have some youtube videos where I covered some songs with friends, like
           this one:
@@ -64,9 +79,9 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
-        </br></br>
-        I was also lucky to teach music instruments and production in my hometown, like in this project, where
-        high-school kids wrote, produced and recorded their own songs:</br> </br>
+        <p>
+          I was also lucky to teach music instruments and production in my hometown, like in this project, where
+          high-school kids wrote, produced and recorded their own songs:</br> </br>
         <div id="mekorockSong">
           <iframe width="320" height="200" src="https://www.youtube.com/embed/tQTqd_SIoWs" title="YouTube video player"
             frameborder="0"
@@ -74,13 +89,16 @@
             allowfullscreen></iframe>
         </div>
         </p>
-      </div>
-      <div id="contact">
-        <button>Contact me</button>
+        </p>
       </div>
     </div>
+    </br>
+    <div id="contact">
+      <button>Email me</button>
+    </div>
   </div>
-  <script src="index.js"></script>
+  </div>
 </body>
+<script src="index.js"></script>
 
 </html>

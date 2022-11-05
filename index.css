@@ -1,17 +1,37 @@
-html {
+p {
   font-family: "Montserrat", serif;
+
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   color: #2d2c2c;
-  width: 1000px;
+  width: 1180px;
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+.intro {
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 auto;
+  display: block;
+  font-size: 40px;
+}
+
+#introTitle {
+  display: block;
+  text-shadow: 3px 3px 10px black;
+  padding: 20px 0;
+  display: block;
 }
 
 #uniTitle,
 #workTitle,
 #playTitle {
-  color: red;
+  color: #00539f;
   text-shadow: 3px 3px 10px black;
 }
 
@@ -19,17 +39,25 @@ body {
   width: 100%;
 }
 
-#main {
-  margin: 0 auto;
-}
-
 #intro {
+  display: block;
+  margin: 0 auto;
   border-left: 50%;
 }
 
 #companyLogo img {
-  width: 20%;
-  height: auto;
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.image-cropper {
+  width: 1000px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 #cat {
@@ -40,13 +68,29 @@ body {
   cursor: pointer;
 }
 
-#cat img {
-  transition: 3s;
-  filter: brightness(60%);
+
+/* Style of all buttons that collapses and extends sections */
+.collapsible {
+  background-color: #ccc;
+  cursor: pointer;
+  padding-left: 100px;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
 }
 
-#cat img:hover {
-  cursor: wait;
-  transition: 0.3s;
-  filter: brightness(100%);
+.active,
+.collapsible:hover {
+  background-color: rgba(159, 162, 196, 0.452);
+
+}
+
+.content {
+  padding: 0 18px;
+  overflow: hidden;
+  background-color: #ffffff38;
+  box-shadow: 5px 10px rgba(159, 162, 196, 0.452);
+  outline-width: 10px;
+  outline: 1px solid #2d2c2c;
+  display: block;
 }
