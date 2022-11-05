@@ -4,10 +4,10 @@ p {
 }
 
 body {
-  background-color: #ffffff;
+  background: linear-gradient(90deg, rgba(37, 52, 126, 0.481) 0%,  rgb(87, 118, 242) 50%, rgba(16, 9, 121, 0.19) 100%);;
   color: #2d2c2c;
   width: 1180px;
-  padding-left: 20px;
+  padding-left: 400px;
   padding-right: 20px
 }
 
@@ -21,11 +21,17 @@ h1 {
   font-size: 40px;
 }
 
+#mainButtons{
+  padding-left: 400px;
+  padding-bottom: 10px;
+}
+
 #introTitle {
   display: block;
-  text-shadow: 3px 3px 10px black;
+  text-shadow: 3px 3px 10px rgb(255, 255, 255);
   padding: 20px 0;
   display: block;
+  padding-left: 350px;
 }
 
 #uniTitle,
@@ -57,15 +63,13 @@ h1 {
   height: 100px;
   position: relative;
   overflow: hidden;
-  border-radius: 50%;
-}
-
-#cat {
-  padding: 1rem 0 1rem 0;
+  border-radius: 80%;
 }
 
 #contact button {
   cursor: pointer;
+  padding: 20px;
+  margin-left: 550px;
 }
 
 
